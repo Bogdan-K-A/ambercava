@@ -1,0 +1,78 @@
+@import "../../../style/variables.scss";
+
+.titlePosition {
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.bgGradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $radial-gradient;
+  z-index: 1;
+}
+
+.felxBox {
+  display: flex;
+  justify-content: center;
+  // justify-content: space-between;
+}
+
+.margin {
+  margin-right: 89px;
+}
+
+.list {
+  position: relative;
+  // max-width: 479px;
+  z-index: 2;
+
+  &__item {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__item::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-top: 13px;
+    margin-right: 29px;
+    background: $accent-color;
+  }
+
+  &__item_text {
+    font-size: 20px;
+    font-weight: $light;
+    line-height: 1.4;
+    text-align: left;
+    color: $white;
+  }
+}
+
+.positionBox {
+  position: absolute;
+  top: 84%;
+  left: 14%;
+}
+
+.imgBox {
+  position: relative;
+
+  &__btn {
+    position: absolute;
+    top: 43%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+}

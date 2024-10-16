@@ -1,0 +1,116 @@
+@import "../../style/variables.scss";
+
+.contactForm {
+  position: relative;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  position: relative;
+  margin: 225px auto 300px auto;
+  padding: 75px 100px 115px;
+  max-width: 1180px;
+  height: 722px;
+  border-radius: 10px;
+  background: $title-body;
+  z-index: 1;
+}
+
+.textWrapper {
+  width: 380px;
+}
+
+.formTitle {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: clamp(34px, 5vw, 64px);
+  font-weight: 500;
+  line-height: 140%;
+  color: $accent-color;
+}
+
+.textWrapper p {
+  font-size: 18px;
+  font-weight: $regular;
+  line-height: 30px;
+  text-align: right;
+  color: $secondary-text-color;
+
+  span {
+    color: $accent-color;
+  }
+}
+
+.form {
+  width: 481px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 4px;
+  background: $amber-color;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transition: $transition_3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: $transition_3s;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.formLabel {
+  color: $secondary-text-color;
+
+  font-size: 18px;
+  font-weight: $regular;
+  line-height: 30px;
+}
+
+.formInput,
+.formTextarea {
+  width: 100%;
+  // min-width: 481px;
+  height: 50px;
+  padding: 10px 20px 10px 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $secondary-text-color;
+  background: $input-color;
+}
+
+.formTextarea {
+  height: 150px;
+}
+
+/* ---------------------------------- MEDIA --------------------------------- */
+
+@media (max-width: 993px) {
+  .formWrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 50px 95px;
+  }
+
+  .textWrapper {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}

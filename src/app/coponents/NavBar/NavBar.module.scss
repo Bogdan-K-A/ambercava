@@ -1,0 +1,48 @@
+@import "../../style/variables.scss";
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__listItem {
+    padding: 8px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+    text-transform: uppercase;
+
+    transition: $transition_3s;
+  }
+
+  &__listItem:hover {
+    color: $accent-color;
+    transition: $transition_3s;
+  }
+
+  &__listItem {
+    margin-right: 0;
+  }
+
+  &__listItemLink {
+    padding: 8px 0px;
+  }
+}
+
+/* ---------------------------------- media --------------------------------- */
+
+@media screen and (min-width: 769px) {
+  .nav__list {
+    flex-direction: row;
+  }
+
+  .nav__listItem:not(:last-child) {
+    margin-right: 41px;
+  }
+}

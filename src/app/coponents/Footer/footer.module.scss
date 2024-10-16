@@ -1,0 +1,128 @@
+@import "../../style/variables.scss";
+
+.footerBox__content {
+  width: 100%;
+  padding: 56px 0 52px 0;
+  background-color: rgba(26, 26, 26, 0.95);
+}
+
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media screen and (max-width: 769px) {
+    flex-direction: column;
+  }
+}
+
+.adress {
+  max-width: 270px;
+
+  &__title {
+    margin-bottom: 31px;
+    font-weight: $semi-bold;
+    line-height: 36px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+  }
+}
+
+.navList {
+  &__item {
+    font-size: 20px;
+    font-weight: $semi-bold;
+    line-height: 36px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__item_link {
+    transition: $transition_3s;
+  }
+
+  &__item_link:hover {
+    color: $accent-color;
+    transition: $transition_3s;
+  }
+}
+
+.socialBox {
+  &__title {
+    margin-bottom: 31px;
+    font-weight: $semi-bold;
+    line-height: 36px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__list_item {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 50px;
+    background: $accent-color;
+  }
+
+  &__list_item:not(:last-child) {
+    margin-right: 21px;
+  }
+
+  &__list_item {
+    transition: $transition_3s;
+  }
+
+  &__list_item:hover {
+    transform: scale(1.3);
+    transition: $transition_3s;
+  }
+
+  &__list_itemLink {
+    padding: 10px;
+  }
+}
+
+.secondaryFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 0;
+  color: $secondary-text-color;
+}
+
+.privasiList {
+  display: flex;
+  justify-content: space-around;
+
+  &__item {
+    transition: $transition_3s;
+  }
+
+  &__item:hover {
+    color: $white;
+
+    transition: $transition_3s;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 87px;
+  }
+
+  @media screen and (max-width: 769px) {
+    &__item:not(:last-child) {
+      margin-right: 6px;
+    }
+  }
+}

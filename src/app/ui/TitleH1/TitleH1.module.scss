@@ -1,0 +1,14 @@
+@import "../../style/variables.scss";
+
+.title {
+  font-size: 56px;
+  font-weight: $regular;
+  line-height: 1.4;
+  color: $white;
+
+  &__span {
+    font-weight: $extra-bold;
+    color: $accent-color;
+    letter-spacing: -0.3px;
+  }
+}

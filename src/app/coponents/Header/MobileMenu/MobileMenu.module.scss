@@ -1,0 +1,20 @@
+@import "../../../style/variables.scss";
+
+.dropMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-color: $title-body;
+
+  z-index: 99;
+}
+
+.closeBtn {
+  display: block;
+  color: $accent-color;
+  margin-left: auto;
+}

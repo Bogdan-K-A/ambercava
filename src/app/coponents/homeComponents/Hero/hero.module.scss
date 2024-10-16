@@ -1,0 +1,169 @@
+@import "../../../style/variables.scss";
+
+.hero {
+  position: relative;
+  padding: 38px 0 87px 0;
+  width: 100%;
+  height: auto;
+  background-image: url("../../../../../public/images/home/bg-img-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.titleBox,
+.sliderBox,
+.sliderBox {
+  position: relative;
+  z-index: 1;
+}
+
+.titleBox {
+  margin-top: 170px;
+
+  &__text {
+    color: $secondary-text-color;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+}
+
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+  width: 415px;
+}
+
+.buttonBox {
+  width: 242px;
+  margin-bottom: 245px;
+
+  &__margin {
+    margin: 40px 0 29px 0;
+  }
+
+  &__text {
+    color: $secondary-text-color;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__text a {
+    border-bottom: 1px solid;
+    transition: $transition_3s;
+  }
+
+  &__text a:hover {
+    color: $white;
+    transition: $transition_3s;
+  }
+}
+
+.sliderBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 1180px;
+  height: 390px;
+
+  padding: 50px 20px 50px 30px;
+  border-radius: 10px;
+  background: $title-body;
+
+  &__slider {
+    position: relative;
+    width: 500px;
+    height: auto;
+  }
+
+  &__flexBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__slideContent {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  &__elowLine {
+    width: 100px;
+    height: 2px;
+    margin: 50px 0 30px 0;
+    background: $accent-color;
+  }
+
+  &__accentText {
+    color: $accent-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    width: 533px;
+    height: 240px;
+  }
+
+  &__contentText {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  &__contentText:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__buttonBox {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+    z-index: 1;
+  }
+}
+
+/* Navigation font start */
+.customNext,
+.customPrev {
+  width: 29px;
+  height: 100px;
+  background: $title-body;
+  cursor: pointer;
+}
+
+.customPrev {
+  background-image: url(../../../../../public/images/home/«.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.customNext {
+  background-image: url(../../../../../public/images/home/».svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.shadowBox {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 550px;
+  background: $line-gradient;
+}

@@ -1,0 +1,71 @@
+@import "../../../style/variables.scss";
+
+.bgImg {
+  width: 100%;
+  height: auto;
+  background: url("../../../../../public/images/bgImg.jpeg") no-repeat
+    center/cover;
+}
+
+.titlePosition {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.titleBox {
+  display: flex;
+  margin-bottom: 56px;
+}
+
+.list {
+  &__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  &__itemNum {
+    margin-right: 32px;
+    color: $accent-color;
+    font-size: 74px;
+    font-weight: 200;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+
+  &__itemTitle {
+    font-size: 32px;
+    font-weight: $medium;
+    line-height: 140%;
+    text-transform: uppercase;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 49px;
+  border-left: 1px solid $accent-color;
+  padding-left: 56px;
+}
+
+.col {
+  max-width: 470px;
+}
+
+.accentText {
+  color: $accent-color;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: $bold;
+  line-height: 30px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: $regular;
+  line-height: 30px;
+}
+
+.btnPosition {
+  text-align: center;
+  margin-top: 80px;
+}

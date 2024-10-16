@@ -1,0 +1,35 @@
+@import "../../../style/variables.scss";
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+
+  &__item {
+    text-align: center;
+    width: 336px;
+  }
+
+  &__item_img {
+    margin: 0 auto 38px auto;
+  }
+
+  &__item_title {
+    width: 255px;
+    margin: 0 auto 30px auto;
+    font-size: 24px;
+    font-weight: $bold;
+    line-height: 34px;
+    text-transform: uppercase;
+  }
+
+  &__item_text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.btnPosition {
+  width: 245px;
+  margin: 0 auto;
+}

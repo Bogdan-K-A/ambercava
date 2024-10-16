@@ -1,0 +1,35 @@
+.flexBox {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+  height: 54px;
+  z-index: 99;
+}
+
+.logo {
+  width: 211px;
+  height: 54px;
+}
+
+.hidden {
+  display: none;
+}
+
+.imgMobileMenu {
+  display: block;
+}
+
+/* ---------------------------------- media --------------------------------- */
+@media screen and (min-width: 992px) {
+  .hidden {
+    display: block;
+  }
+
+  .imgMobileMenu {
+    display: none;
+  }
+}

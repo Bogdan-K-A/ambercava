@@ -1,0 +1,62 @@
+@import "../style/variables.scss";
+
+.notFoud {
+  position: relative;
+}
+
+.contentWrapper {
+  position: relative;
+  margin: 215px auto;
+  padding: 75px 100px 115px;
+  max-width: 1180px;
+  height: 624px;
+  border-radius: 10px;
+  background: $title-body;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;
+
+  h2 {
+    color: $accent-color;
+    font-size: clamp(64px, 5vw, 130px);
+    font-weight: $medium;
+    line-height: 140%;
+    margin-bottom: 15px;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.mainText {
+  color: $white;
+  font-size: 24px;
+  font-weight: $semi-bold;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.secondaryText {
+  color: $secondary-text-color;
+  font-size: 18px;
+  font-weight: $regular;
+  line-height: 30px;
+  margin-bottom: 40px;
+  // text-align: center;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
