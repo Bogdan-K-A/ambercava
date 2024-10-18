@@ -7,7 +7,7 @@ import s from "./Company.module.scss";
 const Company = () => {
   return (
     <div className={s.bgImg}>
-      <Section top={105} bottom={76}>
+      <section className={s.section}>
         <div className={s.titlePosition}>
           <TitleH2
             title="Company Incorporation Process in Cyprus"
@@ -168,7 +168,7 @@ const Company = () => {
             <Button text="Get a quote" href="#" />
           </div>
         </Container>
-      </Section>
+      </section>
     </div>
   );
 };

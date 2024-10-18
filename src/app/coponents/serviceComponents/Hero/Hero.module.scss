@@ -13,6 +13,10 @@
   max-width: 900px;
   margin-left: 10px;
   text-align: left;
+
+  @media screen and (max-width: 690px) {
+    max-width: 378px;
+  }
 }
 
 .text {
@@ -24,6 +28,10 @@
 
   color: $secondary-text-color;
   letter-spacing: 0px;
+
+  @media screen and (max-width: 690px) {
+    max-width: 378px;
+  }
 }
 
 .shadowBox {

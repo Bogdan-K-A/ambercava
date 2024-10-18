@@ -1,5 +1,12 @@
 @import "../../../style/variables.scss";
 
+.section {
+  padding-bottom: 130px;
+  @media screen and (max-width: 992px) {
+    padding-bottom: 50px;
+  }
+}
+
 .box1,
 .box2,
 .box3 {
@@ -8,11 +15,19 @@
 
 .box1 {
   padding: 0 0 120px 0;
+
+  @media screen and (max-width: 992px) {
+    padding: 0 0 50px 0;
+  }
 }
 
 .box2 {
   background: $title-body;
   padding: 120px 0;
+
+  @media screen and (max-width: 992px) {
+    padding: 120px 0 50px 0;
+  }
 }
 
 .box3 {
@@ -31,13 +46,24 @@
   position: absolute;
   top: 0;
 
+  @media screen and (max-width: 992px) {
+    top: -70px;
+  }
+
   .box1 &,
   .box3 & {
     left: -14%;
+    @media screen and (max-width: 768px) {
+      left: 0;
+    }
   }
 
   .box2 & {
     right: -11%;
+
+    @media screen and (max-width: 768px) {
+      right: 0;
+    }
   }
 }
 
@@ -48,8 +74,25 @@
   z-index: 1;
   background: $title-body;
 
+  @media screen and (max-width: 1199px) {
+    width: 460px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
+
   .box2 & {
     width: 623px;
+
+    @media screen and (max-width: 1199px) {
+      width: 460px;
+    }
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
   }
 
   &::before {
@@ -75,6 +118,10 @@
     height: 100%;
     border: 2px solid $accent-color;
     z-index: -1;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   .box2 &::after {
@@ -89,15 +136,35 @@
 
 .content {
   width: 580px;
-  // height: 518px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 
   .box1 &,
   .box3 & {
     margin-left: auto;
+
+    @media screen and (max-width: 992px) {
+      margin: auto;
+      padding-top: 350px;
+    }
+
+    @media screen and (max-width: 425px) {
+      padding-top: 180px;
+    }
   }
 
   .box2 & {
     margin-right: auto;
+    @media screen and (max-width: 992px) {
+      margin: auto;
+      padding-top: 350px;
+    }
+
+    @media screen and (max-width: 425px) {
+      padding-top: 180px;
+    }
   }
 
   &__title {
@@ -106,6 +173,10 @@
     line-height: 140%;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 425px) {
+      font-size: 22px;
+    }
   }
 
   &__secondari_text {

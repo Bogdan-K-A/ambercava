@@ -7,7 +7,7 @@ import Button from "@/app/ui/Button/Button";
 
 const Choose = () => {
   return (
-    <Section bottom={130}>
+    <section className={s.section}>
       {/* BOX 1 */}
       <div className={s.box1}>
         <Container>
@@ -127,7 +127,7 @@ const Choose = () => {
           </div>
         </Container>
       </div>
-    </Section>
+    </section>
   );
 };
 

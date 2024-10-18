@@ -7,6 +7,14 @@
     center/cover;
 }
 
+.section {
+  padding: 105px 0 76px 0;
+
+  @media screen and (max-width: 992px) {
+    padding: 50px 0 76px 0;
+  }
+}
+
 .titlePosition {
   max-width: 480px;
   margin: 0 auto;
@@ -15,11 +23,19 @@
 .titleBox {
   display: flex;
   margin-bottom: 56px;
+
+  @media screen and (max-width: 690px) {
+    margin-bottom: 36px;
+  }
 }
 
 .list {
   &__item:not(:last-child) {
     margin-bottom: 60px;
+
+    @media screen and (max-width: 690px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__itemNum {
@@ -29,6 +45,11 @@
     font-weight: 200;
     line-height: 32px;
     text-transform: uppercase;
+
+    @media screen and (max-width: 690px) {
+      font-size: 54px;
+      margin-left: 14px;
+    }
   }
 
   &__itemTitle {
@@ -36,6 +57,10 @@
     font-weight: $medium;
     line-height: 140%;
     text-transform: uppercase;
+
+    @media screen and (max-width: 690px) {
+      font-size: 22px;
+    }
   }
 }
 
@@ -45,6 +70,24 @@
   margin-left: 49px;
   border-left: 1px solid $accent-color;
   padding-left: 56px;
+
+  @media screen and (max-width: 1199px) {
+    div:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  @media screen and (max-width: 690px) {
+    flex-direction: column;
+
+    div {
+      margin-right: 15px;
+    }
+
+    div:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .col {

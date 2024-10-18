@@ -34,7 +34,6 @@
 .textWrapper p {
   font-size: 18px;
   font-weight: $regular;
-  line-height: 30px;
   text-align: right;
   color: $secondary-text-color;
 
@@ -103,11 +102,18 @@
   .formWrapper {
     flex-direction: column;
     align-items: center;
-    padding: 25px 50px 95px;
+    margin: 225px auto 100px auto;
+    padding: 25px 50px 50px;
+    height: auto;
   }
 
   .textWrapper {
     width: 100%;
+  }
+
+  .textWrapper p {
+    text-align: start;
+    margin-bottom: 15px;
   }
 
   .form {

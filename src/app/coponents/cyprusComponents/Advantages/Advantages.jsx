@@ -7,7 +7,7 @@ import s from "./Advantages.module.scss";
 const Advantages = () => {
   return (
     <div className={s.bgImg}>
-      <Section top={105} bottom={76}>
+      <section className={s.section}>
         <div className={s.titlePosition}>
           <TitleH2
             title="Advantages of 
@@ -118,8 +118,8 @@ const Advantages = () => {
                   infrastructure, reliable telecommunications, and
                   well-established business amenities, supporting seamless
                   operations for businesses of all scales. English and Greek are
-                  the official languages, so you won't have any communication
-                  difficulties.
+                  the official languages, so you won&apos;t have any
+                  communication difficulties.
                 </p>
               </div>
             </li>
@@ -128,7 +128,7 @@ const Advantages = () => {
             <Button text="Get in touch" href="#" />
           </div>
         </Container>
-      </Section>
+      </section>
     </div>
   );
 };
