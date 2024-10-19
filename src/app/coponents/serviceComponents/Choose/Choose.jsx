@@ -24,9 +24,9 @@ const Choose = () => {
             </p>
             <p className={s.content__text}>
               Our team assists in determining the most suitable corporate
-              structure, whether it's establishing Limited Liability Companies
-              (LLCs), licensed companies, foundations, or other specialized
-              business forms.
+              structure, whether it&lsquo;s establishing Limited Liability
+              Companies (LLCs), licensed companies, foundations, or other
+              specialized business forms.
             </p>
             <p className={s.content__text}>
               We meticulously navigate legal formalities, draft necessary
@@ -59,8 +59,8 @@ const Choose = () => {
             <h3 className={s.content__title}>Corporate Services</h3>
             <p className={s.content__secondari_text}>
               Explore our comprehensive suite of corporate services designed to
-              optimize your business's financial and operational landscape in
-              Cyprus
+              optimize your business&lsquo;s financial and operational landscape
+              in Cyprus
             </p>
             <p className={s.content__text}>
               Our experts assist in setting up bank accounts, devising
@@ -70,7 +70,8 @@ const Choose = () => {
             <p className={s.content__text}>
               By partnering with Amberkava, businesses gain access to strategic
               solutions that enhance operational efficiency and financial
-              stability while complying with Cyprus's regulatory landscape.
+              stability while complying with Cyprus&lsquo;s regulatory
+              landscape.
             </p>
 
             <Button text="Contact for more" href="#" />
@@ -97,18 +98,19 @@ const Choose = () => {
           <div className={s.content}>
             <h3 className={s.content__title}>Legal and Advisory Services</h3>
             <p className={s.content__secondari_text}>
-              Amberkava's legal and advisory services are tailored to address
-              the diverse needs of businesses setting up in Cyprus
+              Amberkava&lsquo;s legal and advisory services are tailored to
+              address the diverse needs of businesses setting up in Cyprus
             </p>
             <p className={s.content__text}>
               Our experienced legal team provides invaluable guidance on
               compliance matters, drafts and reviews contracts, handles
               corporate governance issues, and offers strategic advice on
-              navigating the Cyprus's legal and regulatory environment.
+              navigating the Cyprus&lsquo;s legal and regulatory environment.
             </p>
             <p className={s.content__text}>
-              We prioritize safeguarding your business's interests, ensuring a
-              smooth and legally compliant operational journey in Cyprus.
+              We prioritize safeguarding your business&lsquo;s interests,
+              ensuring a smooth and legally compliant operational journey in
+              Cyprus.
             </p>
 
             <Button text="Contact for more" href="#" />

@@ -27,8 +27,8 @@ const Company = () => {
                   <p className={s.accentText}>Consultation</p>
                   <p className={s.text}>
                     You discuss your business objectives, structure, and
-                    preferences with Amberkava's experts to determine the most
-                    suitable company type and requirements.
+                    preferences with Amberkava&lsquo;s experts to determine the
+                    most suitable company type and requirements.
                   </p>
                 </div>
 
@@ -155,8 +155,8 @@ const Company = () => {
                   <p className={s.text}>
                     Apart from incorporation, Amberkava offers
                     post-incorporation services like legal counsel, tax
-                    planning, and advisory support tailored to clients' evolving
-                    business needs. Trust us to handle the meticulous
+                    planning, and advisory support tailored to clients&lsquo;
+                    evolving business needs. Trust us to handle the meticulous
                     preparation and submission of VAT, OSS, and VIES
                     declarations, ensuring compliance with tax regulations.
                   </p>

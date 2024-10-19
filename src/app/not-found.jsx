@@ -18,7 +18,7 @@ const NotFound = () => {
           {/* <Button text="Go home " href="/" /> */}
         </div>
       </div>
-      <img className={s.img} src="./images/bg-img-4.png" alt="" />
+      <img className={s.img} src="./images/bg-img-4.png" />
     </div>
   );
 };
