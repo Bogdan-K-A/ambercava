@@ -37,14 +37,16 @@ const Hero = () => {
               <a href="#"> Terms of Use </a> and <a href="#"> Privacy Policy</a>
             </p>
           </div>
-          <Image
-            className={s.buttonBox__img}
-            src="images/cba-test.png"
-            alt="cba-test"
-            width={100}
-            height={100}
-            priority
-          />
+          <div className={s.imgBox}>
+            <Image
+              className={s.buttonBox__img}
+              src="images/cba-test.png"
+              alt="cba-test"
+              width={100}
+              height={100}
+              priority
+            />
+          </div>
         </div>
 
         {/* слайдер */}
