@@ -20,7 +20,7 @@ const AccordionList = () => {
     <section className={s.faqs}>
       <div className={s.positionBox}>
         <Container>
-          <TitleH2 title="Frequently Asked Questions (FAQs)" margin="55" />
+          <TitleH2 title="Frequently Asked Questions (FAQ)" margin="55" />
           <ul className={s.accordion}>
             {ITEMS_LIST.map(({ header, content }, i) => {
               return (

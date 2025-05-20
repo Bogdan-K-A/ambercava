@@ -12,7 +12,7 @@ const NavBar = ({ toggle }) => {
     { name: "home", path: "/" },
     { name: "services", path: "/service-page" },
     { name: "why cyprus?", path: "/why-cyprus" },
-    { name: "faqs", path: "/faqs" },
+    { name: "faq", path: "/faqs" },
     { name: "contacts", path: "/contacts" },
   ];
 
